@@ -5,38 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pocket Screens</title>
     <style>
-        body {
+     body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: #ffffff;
             text-align: center;
         }
         .container {
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background: white;
+            background: #1e1e1e;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
         }
         h1 {
-            color: #333;
+            color: #00e6e6;
+            font-size: 2rem;
         }
         p {
-            color: #666;
+            color: #cccccc;
+            font-size: 1.1rem;
         }
         button {
-            background-color: #007bff;
-            color: white;
+            background-color: #00e6e6;
+            color: #121212;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin-top: 20px;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #009999;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            color: #00e6e6;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -44,12 +55,9 @@
     <div class="container">
         <h1>Welcome to Pocket Screens</h1>
         <p>Your lightweight and stylish screen solution.</p>
-        <button onclick="showMessage()">Learn More
+        <button>        <a href="https://ministerweb.advico-ws.de/robertjanmeier" target="_blank" title="mehr Informationen">Learn More</a>
         </button>
-        
-        <a href="https://ministerweb.advico-ws.de/robertjanmeier" target="_blank" title="mehr Informationen">HERE</a>
-
-        <p id="message" style="display:none; margin-top: 20px; color: #007bff;"></p>
+                <p id="message" style="display:none; margin-top: 20px; color: #007bff;"></p>
     </div>
 
     <script>
